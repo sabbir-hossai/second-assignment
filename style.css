@@ -67,9 +67,7 @@ header:hover .banner-img1>img{
     grid-column-gap: 10px;
     
 }
-.player{
-      
-}
+  
 .player>img{
     width: 300px;
     height: 256px;
@@ -125,12 +123,17 @@ header:hover .banner-img1>img{
 /* for responsive start*/
 
 @media screen and (max-width: 768px) {
-    header{
-        height: 500px;
-    }
     nav{
         display: none;
     }
+    .container{
+        margin: 10px;
+       
+    }
+    header{
+        height: 500px;
+    }
+   
     .copa-2021{
         display:grid;
         grid-template-columns: repeat(1,1fr);
@@ -161,9 +164,36 @@ header:hover .banner-img1>img{
         transform: scale(1  );
         transition: transform 2s ease-in-out;
     }
-    main , .footer-section{
-        display: none;
+
+
+    /* header end */
+
+
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 10px;
+        
     }
+    .player>img{
+        width: 300px;
+        height: 256px;
+        left: 0px;
+        top: 0px;
+
+        
+    }
+
+     /* footer-responsive start */
+
+     .footer-banner>img{
+        width: 250px;
+        height: 70px;
+        
+        
+    }
+
+     /* footer-responsive end */
 
 }
 
