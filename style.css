@@ -122,7 +122,9 @@ header:hover .banner-img1>img{
 
 /* for responsive start*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+   
+    /* mobile start */
     nav{
         display: none;
     }
@@ -192,8 +194,99 @@ header:hover .banner-img1>img{
         
         
     }
+}
 
      /* footer-responsive end */
+     
+    /* mobile end */
+
+
+    /* for ipad start */
+
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        
+        /* mobile start */
+        nav{
+            display: none;
+        }
+        .container{
+            margin: 10px;
+           
+        }
+        header{
+            height: 400px;
+        }
+       
+        .copa-2021{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            padding-top: 50px;  
+       }
+       .copa-2021>div{
+           margin-left: 30px;
+       }
+        h1{
+            font-size: 36px;
+             margin-left: 10px;
+        }
+        .watch{
+            border-bottom: 1px solid #E02C6D;
+            background-color:#E02C6D ;
+            padding: 15px 50px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .banner-img1 img{
+            /* width: 556.01px;
+            height: 438px; */
+            width: 350px;
+            height: auto;
+            margin-left: 10px;
+            margin-top: 20px;
+             
+             
+        }
+        header:hover .banner-img1>img{
+            transform: scale(1.  );
+            transition: transform 2s ease-in-out;
+        }
+    
+    
+        /* header end */
+    
+        main{
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+        .players{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-row-gap: 10px;
+            justify-content: space-between;
+            margin-left: 30px;
+            
+        }
+        .player>img{
+            width: 300px;
+            height: 256px;
+            
+            
+        }
+    
+         /* footer-responsive start */
+    
+         .footer-banner>img{
+            width: 300px;
+            height: auto;
+            
+            
+        }
+    
+         /* footer-responsive end */
+         
+        
+    /* for tav end */
 
 }
 
