@@ -121,3 +121,51 @@ header:hover .banner-img1>img{
     align-items: center;
 }
 /* footer section end */
+
+/* for responsive start*/
+
+@media screen and (max-width: 768px) {
+    header{
+        height: 500px;
+    }
+    nav{
+        display: none;
+    }
+    .copa-2021{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+       
+   }
+    h1{
+        font-size: 28px;
+         margin-left: 10px;
+    }
+    .watch{
+        border-bottom: 1px solid #E02C6D;
+        background-color:#E02C6D ;
+        padding: 10px 50px;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    .banner-img1 img{
+        /* width: 556.01px;
+        height: 438px; */
+        width: 300px;
+        height: auto;
+        margin-left: 10px;
+        margin-top: 20px;
+         
+         
+    }
+    header:hover .banner-img1>img{
+        transform: scale(1  );
+        transition: transform 2s ease-in-out;
+    }
+    main , .footer-section{
+        display: none;
+    }
+
+}
+
+
+/* for responsive  end*/
